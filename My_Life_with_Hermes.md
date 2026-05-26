@@ -63,10 +63,7 @@ The dashboard also runs inside the Hermes container. Tailscale is integrated int
 
 Since I want to output some reports as PDF, I build my own Docker image with [Pandoc](https://github.com/jgm/pandoc) and [Typst](https://github.com/typst/typst) installed.
 
-<p align="center">
-  <img src="media/hermes_docker_container_arch.png" width="680">
-</p>
-
+ 
 ### Volumes
 
 Besides the standard `/opt/data` volume, I mount an additional directory (`.merkur`; Merkur is the German name of the Roman god [Mercurius](https://en.wikipedia.org/wiki/Mercury_(mythology)), who corresponds to the Greek god **Hermes**).
