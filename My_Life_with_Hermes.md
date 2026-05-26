@@ -1,6 +1,6 @@
 ---
 title: My Life with Hermes Agent
-layout: default
+layout: home
 date: 2026-05-26
 summary: My experience with the Hermes Agent
 ---
