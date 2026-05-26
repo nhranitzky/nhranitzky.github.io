@@ -1,38 +1,50 @@
 ---
 ---
 
-@import "{{ site.theme }}";
+* { box-sizing: border-box; }
 
-/* ---- Page header ---- */
-.page-header {
-  background: linear-gradient(135deg, #2b3a67 0%, #4a6fa5 100%);
-  padding: 4rem 2rem;
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  color: #2d2d2d;
+  background: #fafafa;
+  line-height: 1.6;
 }
 
-.page-header .project-name {
-  font-size: 2.5rem;
+/* ---- Header ---- */
+.site-header {
+  background: linear-gradient(135deg, #2b3a67 0%, #4a6fa5 100%);
+  color: #fff;
+  text-align: center;
+  padding: 4.5rem 1.5rem;
+}
+
+.site-title {
+  margin: 0;
+  font-size: 2.75rem;
   font-weight: 700;
   letter-spacing: -0.02em;
 }
 
-.page-header .project-tagline {
-  font-size: 1.1rem;
+.site-tagline {
+  margin: 0.5rem 0 0;
+  font-size: 1.15rem;
   opacity: 0.85;
   font-weight: 400;
 }
 
-/* Hide the default Cayman buttons on the home page */
-.page-header .btn {
-  display: none;
+/* ---- Content ---- */
+.content {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 3rem 1.5rem;
 }
 
-/* ---- Intro text ---- */
 .intro {
-  font-size: 1.25rem;
-  line-height: 1.6;
-  color: #555;
-  margin: 0 0 2.5rem;
+  font-size: 1.2rem;
+  color: #666;
   text-align: center;
+  margin: 0 0 2.5rem;
 }
 
 /* ---- Document cards ---- */
@@ -43,42 +55,49 @@
 
 .doc-card {
   display: block;
-  padding: 1.5rem 1.75rem;
-  border: 1px solid #e6e6e6;
-  border-radius: 12px;
-  text-decoration: none !important;
+  padding: 1.6rem 1.8rem;
+  background: #fff;
+  border: 1px solid #e8e8e8;
+  border-radius: 14px;
+  text-decoration: none;
   color: inherit;
   transition: transform 0.15s ease, box-shadow 0.15s ease, border-color 0.15s ease;
-  background: #fff;
 }
 
 .doc-card:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.07);
+  transform: translateY(-3px);
+  box-shadow: 0 8px 24px rgba(43, 58, 103, 0.1);
   border-color: #4a6fa5;
 }
 
-.doc-card h3 {
-  margin: 0 0 0.35rem;
-  color: #2b3a67;
-  font-size: 1.3rem;
-}
-
-.doc-card time {
-  display: block;
-  font-size: 0.85rem;
-  color: #999;
-  margin-bottom: 0.5rem;
-}
-
-.doc-card p {
+.doc-title {
   margin: 0;
-  color: #555;
-  line-height: 1.5;
+  font-size: 1.35rem;
+  color: #2b3a67;
 }
 
-/* ---- Content width ---- */
-.main-content {
-  max-width: 960px !important;
-  padding: 2rem !important;
+.doc-date {
+  display: block;
+  margin: 0.3rem 0 0.7rem;
+  font-size: 0.85rem;
+  color: #9a9a9a;
+}
+
+.doc-summary {
+  margin: 0 0 1rem;
+  color: #555;
+}
+
+.doc-arrow {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #4a6fa5;
+}
+
+/* ---- Footer ---- */
+.site-footer {
+  text-align: center;
+  padding: 2rem 1.5rem;
+  color: #aaa;
+  font-size: 0.85rem;
 }
