@@ -1,0 +1,81 @@
+
+@import "{{ site.theme }}";
+
+/* ---- Page header ---- */
+.page-header {
+  background: linear-gradient(135deg, #2b3a67 0%, #4a6fa5 100%);
+  padding: 4rem 2rem;
+}
+
+.page-header .project-name {
+  font-size: 2.5rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+.page-header .project-tagline {
+  font-size: 1.1rem;
+  opacity: 0.85;
+  font-weight: 400;
+}
+
+/* Hide the default Cayman buttons on the home page */
+.page-header .btn {
+  display: none;
+}
+
+/* ---- Intro text ---- */
+.intro {
+  font-size: 1.25rem;
+  line-height: 1.6;
+  color: #555;
+  margin: 0 0 2.5rem;
+  text-align: center;
+}
+
+/* ---- Document cards ---- */
+.doc-list {
+  display: grid;
+  gap: 1.25rem;
+}
+
+.doc-card {
+  display: block;
+  padding: 1.5rem 1.75rem;
+  border: 1px solid #e6e6e6;
+  border-radius: 12px;
+  text-decoration: none !important;
+  color: inherit;
+  transition: transform 0.15s ease, box-shadow 0.15s ease, border-color 0.15s ease;
+  background: #fff;
+}
+
+.doc-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.07);
+  border-color: #4a6fa5;
+}
+
+.doc-card h3 {
+  margin: 0 0 0.35rem;
+  color: #2b3a67;
+  font-size: 1.3rem;
+}
+
+.doc-card time {
+  display: block;
+  font-size: 0.85rem;
+  color: #999;
+  margin-bottom: 0.5rem;
+}
+
+.doc-card p {
+  margin: 0;
+  color: #555;
+  line-height: 1.5;
+}
+
+/* ---- Content width ---- */
+.main-content {
+  max-width: 760px;
+}
