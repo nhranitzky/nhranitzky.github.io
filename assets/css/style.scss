@@ -145,3 +145,37 @@ body {
   .content { padding: 2rem 1.25rem; }
   .doc-card { padding: 1.3rem 1.4rem; }
 }
+
+
+/* ---- Post header ---- */
+.post-header {
+  background: linear-gradient(135deg, #2b3a67 0%, #4a6fa5 100%);
+  color: #fff;
+  padding: 2.5rem 0;
+}
+
+.post-header .content {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.back-link {
+  color: rgba(255, 255, 255, 0.8);
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+.back-link:hover {
+  color: #fff;
+}
+
+.post-title {
+  margin: 0.8rem 0 0.3rem;
+  font-size: 2.2rem;
+  color: #fff;
+}
+
+.post-date {
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.75);
+}

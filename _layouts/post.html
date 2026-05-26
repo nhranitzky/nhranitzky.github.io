@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ page.title }} | {{ site.title }}</title>
+  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+</head>
+<body>
+  <header class="post-header">
+    <div class="content">
+      <a class="back-link" href="{{ '/' | relative_url }}">&larr; {{ site.title }}</a>
+      <h1 class="post-title">{{ page.title }}</h1>
+      {% if page.date %}
+        <time class="post-date">{{ page.date | date: "%B %-d, %Y" }}</time>
+      {% endif %}
+    </div>
+  </header>
+  <main class="content">
+    {{ content }}
+  </main>
+  <footer class="site-footer">
+    <p>&copy; {{ 'now' | date: "%Y" }} {{ site.title }}</p>
+  </footer>
+  <script data-goatcounter="https://nhranitzky.goatcounter.com/count"
+          async src="//gc.zgo.at/count.js"></script>
+</body>
+</body>
+</html>

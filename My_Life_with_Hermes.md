@@ -1,11 +1,11 @@
 ---
 title: My Life with Hermes Agent
-layout: home
+layout: post
 date: 2026-05-26
 summary: My experience with the Hermes Agent
 ---
 
-# My life with Hermes Agent
+ 
 
 I have been using Hermes Agent since around the beginning of April. Before that I had experimented with Openclaw, but gave it up after too many faulty updates and poor performance on my Raspberry Pi 5.
 
