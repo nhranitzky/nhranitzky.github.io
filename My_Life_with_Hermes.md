@@ -490,6 +490,12 @@ I implemented a proof-of-concept ([hermes-multiprofile-docker](https://github.co
 
 This approach is straightforward to implement: no changes to the Hermes codebase are required, only the Docker startup scripts need to be changed; the profiles are detected automatically.
 
+---
+Update (2026-05-29): Hermes now fully [supports](https://hermes-agent.nousresearch.com/docs/user-guide/docker) profiles in Docker. The implementation is similar to mine; however, Hermes uses [s6-overlay￼](https://github.com/just-containers/s6-overlay) to supervise and manage the gateway and dashboard processes.
+---
+
+ 
+
 ## What I still plan to do
 
 Hermes is addictive. I've resolved to devote more time to other interesting topics, but I'm staying on it; here are a few Hermes topics I want to tackle soon:
