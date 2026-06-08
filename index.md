@@ -8,19 +8,17 @@ layout: home
 </p>
 
 <div class="doc-list">
-  {% assign docs = site.pages | where_exp: "p", "p.path contains '.md'" | sort: "date" | reverse %}
-  {% for page in docs %}
-    {% if page.path != 'index.md' and page.title %}
-      <a class="doc-card" href="{{ page.url | relative_url }}">
-        <h3 class="doc-title">{{ page.title }}</h3>
-        {% if page.date %}
-          <time class="doc-date">{{ page.date | date: "%B %-d, %Y" }}</time>
-        {% endif %}
-        {% if page.summary %}
-          <p class="doc-summary">{{ page.summary }}</p>
-        {% endif %}
-        <span class="doc-arrow">Read &rarr;</span>
-      </a>
-    {% endif %}
+  {% assign docs = site.data.toc | sort: "date" | reverse %}
+  {% for doc in docs %}
+    <a class="doc-card" href="{{ doc.url | relative_url }}">
+      <h3 class="doc-title">{{ doc.title }}</h3>
+      {% if doc.date %}
+        <time class="doc-date">{{ doc.date | date: "%B %-d, %Y" }}</time>
+      {% endif %}
+      {% if doc.summary %}
+        <p class="doc-summary">{{ doc.summary }}</p>
+      {% endif %}
+      <span class="doc-arrow">Read &rarr;</span>
+    </a>
   {% endfor %}
 </div>
