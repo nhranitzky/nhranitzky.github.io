@@ -5,6 +5,7 @@ layout: home
 
 <p class="intro">
   A small personal space where I collect my writing, notes, and experiments.
+  <a href="{{ '/feed.xml' | relative_url }}">RSS</a>
 </p>
 
 <div class="doc-list">
