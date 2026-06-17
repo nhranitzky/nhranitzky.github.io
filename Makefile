@@ -1,14 +1,18 @@
 BRANCH := main
 m ?= Update site
 
-.PHONY: status commit push publish
+.PHONY: status commit push publish feed
 
 # Arbeitsverzeichnis anzeigen
 status:
 	git status
 
+# feed.xml aus _data/toc.csv erzeugen
+feed:
+	python3 generate_feed.py
+
 # Alle Änderungen committen:  make commit m="Meine Nachricht"
-commit:
+commit: feed
 	git add -A
 	git commit -m "$(m)"
 

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+  <channel>
+    <title>Norbert Hranitzky</title>
+    <link>https://nhranitzky.github.io</link>
+    <description>Notes, essays, and experiments</description>
+    <lastBuildDate>Wed, 17 Jun 2026 06:55:15 +0000</lastBuildDate>
+    <item>
+      <title>Gnōthi seautón</title>
+      <link>https://nhranitzky.github.io/know_thyself.html</link>
+      <guid>https://nhranitzky.github.io/know_thyself.html</guid>
+      <description>Know thyself - and who else knows you</description>
+      <pubDate>Wed, 17 Jun 2026 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>Self-hosted ntfy setup for Hermes</title>
+      <link>https://nhranitzky.github.io/self_hosted_ntfy_hermes.html</link>
+      <guid>https://nhranitzky.github.io/self_hosted_ntfy_hermes.html</guid>
+      <description>Using Docker and iPhone</description>
+      <pubDate>Mon, 08 Jun 2026 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>My Life with Hermes Agent</title>
+      <link>https://nhranitzky.github.io/My_Life_with_Hermes.html</link>
+      <guid>https://nhranitzky.github.io/My_Life_with_Hermes.html</guid>
+      <description>My experience with the Hermes Agent</description>
+      <pubDate>Tue, 26 May 2026 00:00:00 +0000</pubDate>
+    </item>
+  </channel>
+</rss>
